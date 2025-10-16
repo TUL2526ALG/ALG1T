@@ -64,5 +64,4 @@ public class Kruznice {
 //            } 
 //        }
 //        return pozice;
-    }
 }
