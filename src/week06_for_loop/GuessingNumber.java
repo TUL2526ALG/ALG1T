@@ -52,7 +52,7 @@ public class GuessingNumber {
         int min = lower;
         int max = upper;
         
-        while(!found && min < max){
+        while(min <= max){//program ma skoncit, kdyz uhodl nebo kdyz min > max 
             middle = (max + min)/2;
             System.out.println("Myslel jsi si cislo " + middle + "?");
             menuAnswers();
