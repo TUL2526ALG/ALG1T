@@ -1,7 +1,7 @@
 # Úlohy - 2D Pole
 
 - [Úlohy - 2D Pole](#úlohy---2d-pole)
-  - [Najednou je polí více.](#najednou-je-polí-více)
+  - [Najednou je těch polí více!](#najednou-je-těch-polí-více)
   - [2D pole jako matice](#2d-pole-jako-matice)
   - [Print 2D pole](#print-2d-pole)
   - [Load 2D pole](#load-2d-pole)
@@ -10,9 +10,9 @@
   - [Stochastická matice](#stochastická-matice)
   - [Symetrická matice](#symetrická-matice)
 
-## Najednou je polí více.
+## Najednou je těch polí více!
 
-> [!question]
+> [!question] 
 - Jaký je index prvku?
 - Jak zjistím počet řádků/sloupců?
 - Jak zjistím poslední prvek v poli?
@@ -25,35 +25,35 @@
 ```mermaid
 graph LR
 
-    subgraph 2D["2D pole - řádky"]
+    subgraph 2D["2D pole - odkaz na řádky"]
         A0["A[0]"]
         A1["A[1]"]
         AM["A[m]"]
     end
     
-    subgraph row1["sloupce řádku 0"]
+    subgraph row1["položky sloupců na řádku 0"]
         row10["A[0][0]"]
         row11["A[0][1]"]
-        row1m["A[0][m]"]
+        row1m["A[0][n]"]
     end
 
-    subgraph row2["sloupce řádku 1"]
+    subgraph row2["položky sloupců na řádku 1"]
         row20["A[1][0]"]
         row21["A[1][1]"]
-        row2m["A[1][m]"]
+        row2m["A[1][n]"]
     end
     
-    subgraph rowm["sloupce řádku m"]
+    subgraph rowm["položky sloupců na řádku m"]
         rowm0["A[m][0]"]
         rowm1["A[m][1]"]
-        rowmm["A[m][m]"]
+        rowmm["A[m][n]"]
     end
     
-    reference["int[][] A = new int[m][m]"] -.-> 2D
+    reference["int[][] A = new int[m][n]"] -.-> 2D
 
-    A0 -->|řádek 0| row1
-    A1 -->|řádek 1| row2
-    AM -->|řádek m| rowm
+    A0 -.->|řádek 0| row1
+    A1 -.->|řádek 1| row2
+    AM -.->|řádek m| rowm
 ```
 ## 2D pole jako matice
 
