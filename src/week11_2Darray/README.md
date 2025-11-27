@@ -9,6 +9,7 @@
   - [Norma matice](#norma-matice)
   - [Stochastická matice](#stochastická-matice)
   - [Symetrická matice](#symetrická-matice)
+  - [Matice identity](#matice-identity)
 
 ## Najednou je těch polí více!
 
@@ -191,3 +192,18 @@ double [][] test4 = {
     {3, 3, 5}};
 System.out.println(isSymetricbyMainDiagonal(test4)); //true
 ```
+
+## Matice identity
+
+$$
+I_{i,j} = \begin{cases}
+1 & \text{pro } i = j \\
+0 & \text{pro } i \neq j
+\end{cases}
+$$
+
+$$
+A * I = A
+$$
+
+Napište funkci, která vytvoří matici identity pro zadaný rozměr.
